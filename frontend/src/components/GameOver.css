@@ -1,0 +1,94 @@
+.game-over {
+     position: fixed;
+     z-index: 1;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+} 
+.game-over__content {
+     width: 50%;
+     border: 4px solid rgb(40,77,162);
+     margin: 20% auto;
+     padding: 20px;
+     background-color: rgb(20,20,20);
+     color: #fc9200;
+     text-align: center;
+     font-size: 32px;
+}
+.game-over__controls-btn{
+     margin-top: 20px;
+     border: none;
+     border-radius: 3px;
+     padding: 10px 20px;
+     font-size: 14px;
+}
+.game-over__controls-btn:last-child{
+     background-color: #fc9200;
+}
+
+.game-over__controls-btn:hover{
+     background-color: #fff;
+     color: #000;
+     cursor: pointer;
+}
+
+.game-over__controls{
+     margin-top: 40px;
+}
+ 
+.gameover__form-item{
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     margin-bottom: 10px;
+}
+.gameover__form-item label{
+     display: inline-block;
+     color: #fff;
+     font-size: 18px;
+     width: 30%;
+     text-align: left;
+}
+.gameover__form-item input{
+     padding: 5px;
+     width: 50%;
+}
+.gameover__form-item input:focus{
+     outline: none;
+}
+.gameover__form-item select{
+     padding: 5px;
+     width: 50%;
+}
+
+.game-over__message{
+     font-size: 15px;
+     text-align: left;
+     margin-top: 20px;
+}
+
+
+/* Mobile width < 767px */
+@media screen and (max-width: 767px){
+
+     .game-over__content {
+          width: 80%;
+          font-size: 18px;
+     }
+     .game-over__controls-btn{
+          font-size: 12px;
+     }
+     .gameover__form-item label{
+          font-size: 14px;
+          width: 40%;
+     }
+     .gameover__form-item input{
+          width: 50%;
+          margin-left: 5px;
+     }
+     .gameover__form-item select{
+          width: 50%;
+          margin-left: 5px;
+     }
+} 

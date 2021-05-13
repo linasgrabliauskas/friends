@@ -1,0 +1,126 @@
+/* Desktop first (992px +) */
+.highscore{
+     height: 85%;
+     display: flex;
+     justify-content: center;
+     align-items: flex-start;
+     background: rgba(0,0,0,0.7);
+     border-radius: 10px;
+     margin: 2em;
+}
+
+.highscore__content{
+     height: 95%;
+     width: 60%;
+     padding-top: 30px;
+     display: flex;
+     flex-direction: column;
+     overflow:hidden;
+     color: #fff;
+     text-shadow: 2px 2px 1px rgba(0,0,0,0.7);
+}
+
+.highscore h1{
+     font-size: 40px;
+     text-align: center;
+     color: rgb(252,146,0);
+}
+
+.highscore h2{
+     font-size: 20px;
+     text-align: center;
+     color: rgb(252,146,0);
+     margin-bottom: 40px;
+     font-style: italic; 
+}
+
+.highscore__list-head{
+     width: 100%;
+     display: flex;
+     margin-bottom: 8px;
+     font-weight: 400;
+     color: rgb(252,146,0);
+}
+.highscore__list-container{
+     height: 100%;
+}
+
+.highscore__list{
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     list-style-type: decimal;
+     overflow:hidden;
+     overflow-y:scroll;
+     -ms-overflow-style: none;
+     scrollbar-width: none;
+}
+.highscore__list::-webkit-scrollbar {
+     display: none;
+}
+
+
+.highscore__list-item{
+     display: flex;
+     justify-content: center;
+     width: 100%;
+     margin-bottom: 8px;
+     border-bottom: 1px solid rgba(252,146,0,0.6);
+     font-weight: 400;
+}
+
+.highscore__list-item.loading{
+     padding: 10px 0;
+}
+
+.highscore__name{
+     width: 40%;
+     text-align: center;
+     font-weight: 400;
+}
+.highscore__prize{
+     width: 30%;
+     text-align: center;
+     font-weight: 400;
+} 
+.highscore__country{
+     width: 15%;
+     text-align: center;
+     font-weight: 400;
+}
+.highscore__time{
+     width: 15%;
+     text-align: center;
+     font-weight: 400;
+}
+
+/* Mobile width < 767px */
+@media screen and (max-width: 767px){
+     .highscore{
+          margin: 0;
+          height: 87%;
+     }
+     .highscore h1{
+          font-size: 25px;
+     }
+     .highscore h2{
+          font-size: 16px;
+     }
+     .highscore__content{
+          height: 100%;
+          width: 90%;
+          padding-top: 30px;
+     }
+     .highscore__name{
+          width: 50%;
+     }
+     .highscore__prize{
+          width: 50%;
+     } 
+     .highscore__country{
+          display: none;
+     }
+     .highscore__time{
+          display: none;
+     }
+} 

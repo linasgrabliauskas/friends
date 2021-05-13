@@ -1,0 +1,115 @@
+.help-bar{
+     width: 300px;
+     padding: 30px 0;
+     grid-area: help;
+     justify-self: start;
+     align-self: start;
+     color:#fff;
+     position: relative;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+ 
+.help-bar .overlay{
+     position: absolute;
+     border-radius: 10px;
+     height: 100%;
+     width: 100%;
+     background: rgba(0,0,0,0.4);
+     z-index: -2;
+}
+ 
+.help-bar .help-timer{
+     height: 150px;
+     width: 150px;
+     background: url(../assets/timer/timer5.png);
+     background-repeat: no-repeat;
+     background-size: 100% 100%;
+     background-color: transparent;
+     position: relative;
+}
+ 
+.help-bar .help-timer #help-timer-counter{
+     font-size: 54px;
+     position: absolute;
+     top: 25%;
+     left: 0; 
+     right: 0;
+     width: 100%; 
+     text-align: center;
+}
+ 
+.help-bar .help-info{
+     width: 50%;
+     text-align: center;
+}
+.help-bar .help-info button{
+     display: inline-block;
+     font-size: 18px;
+     font-weight: 400;
+     background-color: #1A1A1A;
+     color: #fff;
+     padding: 8px 25px;
+     margin: 0 auto;
+     border: 2px solid #3463B2;
+     border-radius: 8px;
+}
+.help-bar .help-info button:hover{
+     cursor: pointer;
+     background-color: #fc9200;
+     color: #000;
+}
+.help-bar .help-info button:focus{
+     outline: none;
+}
+.help-bar .help-info .help-message{
+     font-size: 18px;
+     font-weight: 400;
+     text-shadow: 2px 2px 1px rgba(0,0,0,0.7);
+     margin: 10px auto;
+     text-align: center;
+}
+
+/* Mobile width < 767px */
+@media screen and (max-width: 767px){
+
+     .help-bar{
+         width: 100%;
+         margin-top: 5px;
+         padding: 5px 0;
+         justify-self: center;
+         flex-direction: row;
+     }
+
+     .help-bar .help-timer{
+          margin-left: 10%;
+          height: 75px;
+          width: 75px;
+     }
+
+     .help-bar .help-timer #help-timer-counter{
+          font-size: 30px;
+          top: 25%;
+          text-align: center;
+     }
+
+     #help-timer-circle{
+          width: 75px;
+          height: 75px;
+     }
+     .help-bar .help-info{
+         width: 100%;
+         padding: 3px 15px;
+     }
+ 
+     .help-bar .help-info button{
+         padding: 5px 25px;
+     }
+ 
+     .help-bar .help-info .help-message{
+         margin: 5px auto;
+     }
+   
+}
